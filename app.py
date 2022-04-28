@@ -29,8 +29,7 @@ app = Flask(__name__)
 df2 = pd.DataFrame()
 
 
-config(title = "Loan Prediction Application")
-@config(theme="dark")
+config(title = "Loan Prediction Application", theme="dark")
 
 def pred(loan_amount, term_in_months, has_male, sector, repayment_interval):
     x = np.zeros(len(df.drop(['funded_amount','funded'],axis=1).columns))
