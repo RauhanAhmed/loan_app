@@ -1,5 +1,5 @@
 from pywebio.platform.flask import webio_view
-from pywebio import STATIC_PATH
+from pywebio import STATIC_PATH, config
 from flask import Flask, send_from_directory
 from pywebio.input import *
 from pywebio.output import *
