@@ -15,8 +15,8 @@ import argparse
 warnings.filterwarnings(action='ignore')
 
 df_link = urlopen("https://drive.google.com/uc?export=download&id=15tt3FN2Y4dLRyGc12IDKpgsD36Qa-g3z")
-model_clf_link = urlopen("https://github.com/RauhanAhmed/loan_eligibility_and_funded_amount_prediction/raw/main/model_clf.pkl")
-model_reg_link = urlopen("https://github.com/RauhanAhmed/loan_eligibility_and_funded_amount_prediction/raw/main/model_reg.pkl")
+model_clf_link = urlopen("https://github.com/RauhanAhmed/loan_app/raw/main/model_clf.pkl")
+model_reg_link = urlopen("https://github.com/RauhanAhmed/loan_app/raw/main/model_reg.pkl")
 
 df = pd.read_csv(df_link)
 df = df.iloc[0:len(df.index), 1:len(df.columns)]
