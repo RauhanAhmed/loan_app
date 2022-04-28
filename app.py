@@ -23,11 +23,7 @@ df = df.iloc[0:len(df.index), 1:len(df.columns)]
 model_clf = pickle.load(model_clf_link)
 model_reg = pickle.load(model_reg_link)
 
-config(title = "My Application")
-@config(theme="dark")
-
-others = ['Education','Transportation','Clothing','Arts','Manufacturing',\
-          'Construction','Health','Entertainment','Wholesale']
+others = ['Education','Transportation','Clothing','Arts','Manufacturing','Construction','Health','Entertainment','Wholesale']
 
 app = Flask(__name__)
 df2 = pd.DataFrame()
