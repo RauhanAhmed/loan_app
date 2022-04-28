@@ -4,3 +4,4 @@ pandas
 pywebio
 argparse
 scikit-learn
+xgboost
